@@ -9,19 +9,17 @@ with open(os.path.join(PROJECT_DIR, 'README.rst')) as readme:
     long_description = readme.read()
 
 install_requires = [
-    'django>=1.11,<4; python_version >= "3.6.0"',
-    'django-ipware>=2,<4; python_version >= "3.6.0"',
-    'django>=1.11,<3; python_version < "3.6.0"',
-    'django-ipware>=2,<3; python_version < "3.6.0"'
+    'django>=2.2; python_version >= "3.7.0"',
+    'django-ipware>=2',
 ]
 
 test_requires = [
-    'coverage==5.0.2',
-    'pytest==5.3.2',
-    'pytest-cov==2.8.1',
-    'pytest-django==3.7.0',
-    'pytest-sugar==0.9.2',
-    'tox==3.14.3',
+    'coverage',
+    'pytest',
+    'pytest-cov',
+    'pytest-django',
+    'pytest-sugar',
+    'tox',
 ]
 
 setup(
@@ -43,21 +41,18 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
-        'Framework :: Django :: 1.11',
-        'Framework :: Django :: 2.0',
-        'Framework :: Django :: 2.1',
         'Framework :: Django :: 2.2',
-        'Framework :: Django :: 3.0',
-        'Framework :: Django :: 3.1',
+        'Framework :: Django :: 3.2',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3 :: Only',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
