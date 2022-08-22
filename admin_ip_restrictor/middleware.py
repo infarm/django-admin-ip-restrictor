@@ -14,7 +14,7 @@ class AdminIPRestrictorMiddleware(MiddlewareMixin):
 
 
     def __init__(self, get_response=None):
-        self.get_response = get_response
+        super().__init__(get_response)
         restrict_admin = getattr(
             settings,
             'RESTRICT_ADMIN',

@@ -9,7 +9,7 @@ with open(os.path.join(PROJECT_DIR, 'README.rst')) as readme:
     long_description = readme.read()
 
 install_requires = [
-    'django>=2.2; python_version >= "3.7.0"',
+    'django>=4.1; python_version >= "3.7.0"',
     'django-ipware>=2',
 ]
 
@@ -44,6 +44,7 @@ setup(
         'Framework :: Django :: 2.2',
         'Framework :: Django :: 3.2',
         'Framework :: Django :: 4.0',
+        'Framework :: Django :: 4.1',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
